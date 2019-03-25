@@ -1,0 +1,48 @@
+{
+  "name": "@antd-admin/base",
+  "version": "1.0.0",
+  "description": "ant admin 基础库",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib && node ./less.js",
+    "build:watch": "babel src -w -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+git@git.verystar.cn:verypay-frontend/antd-admin-base.git"
+  },
+  "keywords": [
+    "antd",
+    "admin",
+    "antd-admin",
+    "base"
+  ],
+  "author": "jinxing.liu@verystar.cn",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^3.13.0",
+    "lodash": "^4.17.11",
+    "classnames": "^2.2.6",
+    "co": "^4.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "fs-extra": "^7.0.1"
+  }
+}
