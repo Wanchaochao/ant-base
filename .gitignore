@@ -1,0 +1,18 @@
+# idea or vscode
+*bak
+.vscode
+/.vscode
+/coverage
+**/node_modules
+/node_modules
+.idea
+./yarn.lock
+./package-lock.json
+
+# misc
+npm-debug.log*
+yarn-error.log
+
+# visual studio code
+.history
+*.log
