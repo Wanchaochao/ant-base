@@ -52,6 +52,7 @@ class CTable extends Component {
     // 执行一次计算就好了
     this.setState({
       pagination: {
+        showTotal: (total) => {return '总数' + total},
         ...this.props.pagination,
       },
       columns: this.handleColumns(),
