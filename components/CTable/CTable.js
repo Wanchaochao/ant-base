@@ -131,21 +131,26 @@ class CTable extends Component {
     }
 
     Process(function* () {
-      const response = yield me.props.api(params)
+      try {
+        const response = yield me.props.api(params)
 
-      let newPagination = false
-      if (response.page) {
-        newPagination = {
-          ...pagination,
-          ...response.page,
+        let newPagination = false
+        if (response.page) {
+          newPagination = {
+            ...pagination,
+            ...response.page,
+          }
         }
-      }
 
-      me.setState({
-        loading: false,
-        dataSource: response.items,
-        pagination: newPagination,
-      })
+        me.setState({
+          loading: false,
+          dataSource: response.items,
+          pagination: newPagination,
+        })
+      } catch (e) {
+        message.error(e.msg)
+        me.setState({loading: false})
+      }
     }, false)
   }
 
