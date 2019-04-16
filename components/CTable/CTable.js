@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {Table} from 'antd'
+import {Table, message} from 'antd'
 import PropTypes from 'prop-types'
 import {Process, get, renderButtons} from '../../utils'
 import {CTableContext} from './context'
@@ -148,7 +148,7 @@ class CTable extends Component {
           pagination: newPagination,
         })
       } catch (e) {
-        message.error(e.msg)
+        message.error(get(e,'msg'))
         me.setState({loading: false})
       }
     }, false)
