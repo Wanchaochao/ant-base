@@ -12,17 +12,13 @@
     "lib",
     "src"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+git@git.verystar.cn:verypay-frontend/antd-admin-base.git"
-  },
   "keywords": [
     "antd",
     "admin",
     "antd-admin",
     "base"
   ],
-  "author": "jinxing.liu@verystar.cn",
+  "author": "wanchao@littlebug.vip",
   "license": "ISC",
   "dependencies": {
     "antd": "^3.13.0",
